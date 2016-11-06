@@ -27,8 +27,6 @@ MathJax.Hub.Config({
 </head>
 <body>
 
-<p><img src="assert/lr_degr.png" alt="Письма мастера дзен"></p>
-
 $$
 \frac{\partial E}{\partial w_{n,m}^{l}\left(x,\, y\right)} = \sum_{x',y'} o_{n}^{l-1}\left( x'-x,\, y' - y \right) \cdot \delta_{m}^{l}\left(x',\, y' \right)
 $$
@@ -76,6 +74,10 @@ Although I knew how to implement an "normal" flat Multilayer Perceptron (MLP),
 $$
 \delta_{m}^{l}\left(x,\: y\right)=\underbrace{\sum_{o}\sum_{\, x',\, y'}^{N_{w},N_{w}}\delta_{o}^{l+1}\left(x+x',\, y+y'\right)\cdot w_{m,o}^{l+1}\left(x',\, y'\right)}_{\text{Cross-Correlation, Backpropagated Error}}\cdot\frac{\partial a\left(c_{m}^{l}\left(x,\, y\right)\right)}{\partial c_{m}^{l}\left(x,\, y\right)}
 $$
+
+
+<p><img src="/assert/lr_degr.png" alt="Письма мастера дзен"></p>
+
 
 </body>
 </html>
